@@ -26,6 +26,7 @@ val project = Project(
       "org.iq80.leveldb" % "leveldb" % "0.7", // for BlogApp
       "org.fusesource.leveldbjni" % "leveldbjni-all" % "1.8", // for BlogApp
       "org.scalatest" %% "scalatest" % "2.2.1" % "test",
+      "commons-io" % "commons-io" % "2.4" % "test",
       "io.kamon" % "sigar-loader" % "1.6.6-rev002"),
     javaOptions in run ++= Seq(
       "-Xms128m", "-Xmx1024m", "-Djava.library.path=./target/native"),

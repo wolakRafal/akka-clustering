@@ -54,14 +54,14 @@ class Counter extends PersistentActor {
     case Get(id) ⇒ (id % numberOfShards).toString
   }
 
-  // example of usage
-  val counterRegion: ActorRef = ClusterSharding(context.system).start(
-    typeName = "Counter",
-    entityProps = Props[Counter],
-    settings = ClusterShardingSettings(context.system),
-    extractEntityId = extractEntityId,
-    extractShardId = extractShardId
-  )
+/////   example of usage
+//  val counterRegion: ActorRef = ClusterSharding(context.system).start(
+//    typeName = "Counter",
+//    entityProps = Props[Counter],
+//    settings = ClusterShardingSettings(context.system),
+//    extractEntityId = extractEntityId,
+//    extractShardId = extractShardId
+//  )
 }
 
 
